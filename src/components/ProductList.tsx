@@ -1,7 +1,7 @@
-import React, { ReactElement } from "react";
+import { ReactElement } from "react";
 import useCart from "../hooks/useCart";
 import useProducts from "../hooks/useProducts";
-import { UseProductsContextType } from "../context/ProductsProvider";
+// import { UseProductsContextType } from "../context/ProductsProvider";
 import Product from "./Product";
 
 const ProductList = () => {
@@ -27,7 +27,7 @@ const ProductList = () => {
 
   const content = <main className="main main--products">{pageContent}</main>;
 
-  return { content };
+  return content;
 };
 
 export default ProductList;
